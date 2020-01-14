@@ -1,0 +1,140 @@
+.contacts-page {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 150px 0 70px 0;
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, .1),
+		rgba(0, 0, 0, 0.5)), url("../../img/contacts/contacts-bg.jpg");
+	-webkit-background-size: cover;
+	background-size: cover;
+	height: 100vh;
+	color: white;
+}
+
+.contacts-page .application-form h4 {
+	font-weight: 400;
+	font-size: 23px;
+}
+
+.contacts-page .application-form .input-field {
+	position: relative;
+}
+
+.contacts-page .application-form .input-field input {
+	color: white;
+	padding-top: 35px;
+	padding-bottom: 5px;
+	font-size: 18px;
+	border: none;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	outline: none;
+	box-shadow: none;
+}
+
+.contacts-page .application-form .input-field label {
+	position: absolute;
+	text-align-last: left;
+	font-size: 18px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	border-bottom: 1px solid grey;
+	overflow: hidden;
+}
+
+.contacts-page .application-form .input-field label:after {
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	bottom: -2px;
+	border-bottom: 4px solid white;
+	transform: translateX(-100%);
+	transition: transform .3s ease;
+}
+
+.contacts-page .application-form .input-field label span {
+	position: absolute;
+	bottom: 5px;
+	left: 0;
+	transition: all .3s ease;
+}
+
+.contacts-page .application-form .input-field input:focus + .label span,
+.application-form .input-field input:valid + .label span {
+	transform: translateY(-150%);
+	font-size: 14px;
+	color: white;
+}
+
+.contacts-page .application-form .input-field input:focus + label::after, 
+.input-field input:valid + label::after {
+	transform: translateX(0%);
+}
+
+.contacts-page .application-form button {
+	background-color: #313ef5;
+	width: 150px;
+	height: 60px;
+	font-size: 18px;
+	margin: 40px auto;
+}
+
+.contacts-page .application-form button:hover {
+	background-color: #525df2;
+}
+
+.contacts-page .application-form {
+	width: 450px;
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	justify-content: center;
+	animation: fade-in-right .7s ease;
+}
+
+.contacts-page .description {
+	line-height: 40px;
+	font-weight: 400;
+	font-size: 20px;
+	animation: fade-left-side .7s ease;
+}
+
+.contacts-page .description a {
+	color: #5863f5;
+	font-weight: 600;
+}
+
+.contacts-page .description a:hover {
+	text-decoration: none;
+}
+
+.contacts-page .description a:focus {
+	outline: none;
+}
+
+@keyframes fade-in-right {
+	0% {
+		opacity: 0;
+		transform: translateX(200px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+@keyframes fade-left-side {
+	0% {
+		opacity: 0;
+		transform: translateX(-200px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}

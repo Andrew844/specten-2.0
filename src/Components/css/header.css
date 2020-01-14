@@ -1,0 +1,60 @@
+.header {
+	height: 80px;
+	display: flex;
+	align-items: center;
+	background-color: #bf1004;
+	justify-content: space-between;
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+}
+
+.links {
+	display: flex;
+}
+
+.links button {
+	cursor: pointer;
+	color: white;
+	text-align: center;
+	height: 80px;
+	width: 130px;
+	line-height: 80px;
+	font-size: 20px;
+	text-decoration: none;
+	border: none;
+	background-color: #bf1004;
+	transition: all .4s ease;
+}
+
+.links button.clicked {
+	background-color: #8f0b01;
+}
+
+.links button:focus {
+	outline: none;
+}
+
+.logo {
+	cursor: pointer;
+	width: 300px;
+	height: 80px;
+	text-align: center;
+}
+
+.logo h3 {
+	line-height: 80px;
+	color: white;
+	font-weight: 400;
+	font-size: 30px;
+}
+
+.header .phones {
+	cursor: pointer;
+	font-weight: 500;
+	font-size: 18px;
+	color: white;
+	width: 200px;
+	text-align: center;
+	padding-top: 12px;
+}

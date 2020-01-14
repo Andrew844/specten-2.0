@@ -1,0 +1,15 @@
+footer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #2732ab;
+	color: white;
+	font-size: 19px;
+	padding: 40px 0 40px 0;;
+}
+
+.left-part {
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+	padding: 20px 0 20px 0;
+}
