@@ -5,7 +5,7 @@ import Header from "./header";
 import Main from "./pages/main";
 import Contacts from "./pages/contacts";
 import Footer from "./footer";
-import Catalogue from "./pages/catalogue";
+import Catalogue from "./pages/catalogue/";
 import Useful from "./pages/useful";
 
 export default class App extends Component {

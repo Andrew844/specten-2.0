@@ -1,14 +1,10 @@
 .catalogue-page {
 	padding: 150px 0 200px 0;
-	background-image: linear-gradient(to bottom, rgba(50, 50, 50, .6),	rgba(50, 50, 50, 0.5)),
-	 url("../../img/catalogue/wall.jpg");
-	 background-size: contain;
 }
 
 .catalogue-page h4 {
 	text-align: center;
 	font-size: 35px;
-	color: white;
 }
 
 .catalogue-page .search-panel {
@@ -30,7 +26,6 @@
 	background-color: transparent;
 	outline: none;
 	box-shadow: none;
-	color: white;
 }
 
 .catalogue-page .search-panel .input-field label {
@@ -41,9 +36,8 @@
 	width: 100%;
 	height: 100%;
 	pointer-events: none;
-	border-bottom: 1px solid white;
+	border-bottom: 1px solid;
 	overflow: hidden;
-	color: white;
 }
 
 .catalogue-page .search-panel .input-field label:after {
@@ -53,7 +47,7 @@
 	width: 100%;
 	left: 0;
 	bottom: -2px;
-	border-bottom: 4px solid white;
+	border-bottom: 3px solid;
 	transform: translateX(-100%);
 	transition: transform .3s ease;
 }
@@ -69,7 +63,6 @@
 .search-panel .input-field input:valid + label span {
 	transform: translateY(-150%);
 	font-size: 14px;
-	color: white;
 }
 
 .catalogue-page .search-panel .input-field input:focus + label::after, 
@@ -78,8 +71,21 @@
 
 }
 
-.catalogue-page .search-panel, .catalogue-page h4 {
-	animation: fade-in-left .7s ease-in-out;
+.catalogue-page .card-menu {
+	margin: 0 auto 70px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 80%;
+}
+
+.catalogue-page .card-menu button {
+	background-color: #bf1004;
+	border: none;
+	border-radius: 4px;
+	margin: 5px;
+	width: 200px;
+	color: white;
 }
 
 .catalogue-page .cards {
@@ -90,15 +96,15 @@
 }
 
 .catalogue-page .cards .card {
-	width: 370px;
+	width: 330px;
 	cursor: pointer;
-	margin-top: 30px;
+	margin-top: 20px;
 	background-color: #e0e1f0;
 	border: none;
 }
 
 .catalogue-page .cards .card .card-header {
-	background-color: #313ef5;
+	background-color: #bf1004;
 	color: white;
 	height: 60px;
 }
@@ -110,7 +116,7 @@
 }
 
 .catalogue-page .cards .card .card-img img {
-	max-width: 350px;
+	width: 80%;
 	display: block;
 	margin: 20px auto 20px auto;
 	border-radius: 10px;
@@ -118,68 +124,79 @@
 }
 
 .catalogue-page .cards .card .card-description p {
-	width: 320px;
-	margin: 20px auto 50px auto;
+	width: 80%;
+	margin: 20px auto 30px auto;
 	font-size: 18px;
 }
 
-.catalogue-page .modal .modal-header {
-	display: flex;
-	align-items: center;
+.catalogue-page .card-unfolded {
+	width: 90%;
+	margin: auto;
 }
 
-.catalogue-page .modal .modal-body .description h5 {
+.catalogue-page .card-unfolded .card-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.catalogue-page .card-unfolded .card-body .description h5 {
 	text-align: center;
 }
 
-.catalogue-page .modal .modal-body .description p {
+.catalogue-page .card-unfolded .card-body .description p {
 	line-height: 30px;
 }
 
-.catalogue-page .modal img {
+.catalogue-page .card-unfolded img {
 	display: block;
 	margin: auto;
 }
 
-.catalogue-page .modal .accordion .card .card-header {
-	padding: 0;
-	height: 50px;
+.catalogue-page .card-unfolded .accordion {
+	width: 500px;
+	margin: auto;
 }
 
-.catalogue-page .modal .accordion .card .card-header button {
-	width: 100%;
+.catalogue-page .card-unfolded .accordion .card .card-header {
+	padding: 0;
+	height: 50px;
+	background-color: #fff;
+}
+
+.catalogue-page .card-unfolded .accordion .card .card-header button {
+	width: 500px;
 	line-height: 40px;
+	margin: auto;
+	height: 50px;
 	outline: none;
 	font-size: 18px;
 	border: none;
-	text-align-last: left;
+	background-color: #fff;
 }
 
-.catalogue-page .modal .modal-header, .modal-header h5, .modal-header span {
-	background-color: #313ef5;
+.catalogue-page .card-unfolded .accordion .card .card-body {
+	border-top: 1px solid lightslategray;
+}
+
+.catalogue-page .card-unfolded .card-header, .card-header h5, .card-header span {
+	background-color: #bf1004;
 	color: white;
 	font-size: 25px;
 }
 
-.catalogue-page .modal .modal-footer {
-	border: none;	
+.catalogue-page .card-unfolded .card-footer {
+	border: none;
+	display: flex;
+	justify-content: center;
+	background-color: #fff;
 }
 
-.catalogue-page .modal .modal-footer button {
-	background-color: #313ef5;
+.catalogue-page .card-unfolded .card-footer a {
+	background-color: #bf1004;
 	width: 100px;
 	height: 40px;
 	font-size: 16px;
 	margin: auto;
-}
-
-@keyframes fade-in-left {
-	0% {
-		opacity: 0;
-		transform: translateX(-200px);
-	}
-	100% {
-		opacity: 1;
-		transform: translateX(0px);
-	}
+	color: white;
 }
