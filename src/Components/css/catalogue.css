@@ -79,15 +79,16 @@
 	top: 150px;
 	transition: all .4s ease;
 	width: 410px;
-	border: 2px solid #2732ab;
+	border: 2px solid gray;
 	border-radius: 4px;
 	padding: 10px;
+	background-color: #ffffff;
 	transform: translateX(-410px);
 	z-index: 1;
 }
 
 .catalogue-page .card-menu button {
-	background-color: #2732ab;
+	background-color: #bf1004;
 	border: none;
 	border-radius: 4px;
 	margin: 5px;
@@ -104,7 +105,7 @@
 	align-items: center;
 	justify-content: center;
 	color: white;
-	background-color: #2732ab;
+	background-color: #bf1004;
 	transform: translateX(240px);
 	top: 110px;
 	position: absolute;

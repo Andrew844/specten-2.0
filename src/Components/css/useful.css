@@ -1,16 +1,10 @@
 .useful-page {
 	padding: 150px 0 100px 0;
-	background-color: #f7f7ff;
 	width: 100%;
-	background-image: linear-gradient(to bottom, rgba(30, 30, 30, .9),	rgba(0, 0, 0, 0.5)),
-	url("../../img/useful/stone.jpg");
-	background-size: contain;
 }
 
 .useful-page .section-header {
 	padding: 0 50px 50px;
-	animation: drop-to-top .7s ease;
-	color: white;
 }
 
 .useful-page .section-header h4 {
@@ -24,127 +18,29 @@
 	line-height: 40px;
 }
 
-.useful-page .cards {
-	display: flex;
-	flex-wrap: wrap;
-	width: 57vw;
-	margin: auto;
-	animation: fade-in-right .7s ease;
-}
-
-.useful-page .cards .card {
-	width: 350px;
-	height: 350px;
-	margin: 10px auto 10px auto;
-	background-size: cover;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	transition: all .4s ease;
-	overflow: hidden;
-	cursor: pointer;
-	border: none;
-}
-
-.useful-page .cards .card p {
-	color: white;
-	position: absolute;
-	z-index: 10;
-	font-size: 20px;
-}
-
-.useful-page .cards .infrared-heaters {
-	background-image: url("../../img/useful/infrared-heaters.jpg");
-}
-
-.useful-page .cards .infrared-heaters p, .storage-heaters p {
-	transform: translateX(-150%);
-}
-
-.useful-page .cards .floor-convectors {
-	background-image: url("../../img/useful/floor-convectors.jpg");
-}
-
-.useful-page .cards .floor-convectors p, .electric-heaters p {
-	transform: translateX(150%);
-}
-
-.useful-page .cards .electric-heaters {
-	background-image: url("../../img/useful/electric-heaters.jpg");
-}
-
-.useful-page .cards .storage-heaters {
-	background-image: url("../../img/useful/storage-heaters.jpg");
-}
-
-.useful-page .cards .card:hover:before {
-		content: "";
-		display: block;    
-		width: 100%;
-		height: 100%;    
-		position: absolute;
-		top: 0;      
-		left: 0;   
-		background-image: linear-gradient(to left, black, black);
-		opacity: 0.6;
-		animation: show-opacity .5s ease;
-}
-
-.useful-page .cards .card:hover p {
-	transform: translateX(0%);
-	animation: fade-in-left .4s ease;
-}
-
-.useful-page .modal .modal-header {
-	display: flex;
-	align-items: center;
-}
-
-.useful-page .modal .modal-header, .modal-header h5, .modal-header span {
-	background-color: #313ef5;
-	color: white;
-	font-size: 25px;
-}
-
-.useful-page .modal .modal-footer {
-	border: none;	
-}
-
-.useful-page .modal .modal-footer button {
-	background-color: #313ef5;
-	width: 100px;
-	height: 40px;
-	font-size: 16px;
+.useful-page .accordion {
+	width: 700px;
 	margin: auto;
 }
 
-@keyframes show-opacity {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: .6;
-	}
+.useful-page .accordion .card .card-header {
+	padding: 0;
+	height: 50px;
 }
 
-@keyframes fade-in-left {
-	0% {
-		opacity: 0;
-		transform: translateX(-100px);
-	}
-	100% {
-		opacity: 1;
-		transform: translateX(0px);
-	}
+.useful-page .accordion .card .card-header button {
+	width: 700px;
+	background-color: #dbd7d7;
+	line-height: 40px;
+	margin: auto;
+	height: 50px;
+	outline: none;
+	font-size: 18px;
+	text-decoration: none;
+	color: black;
+	border-bottom: 2px solid gray;
 }
 
-@keyframes fade-in-left {
-	0% {
-		opacity: 0;
-		transform: translateX(100px);
-	}
-	100% {
-		opacity: 1;
-		transform: translateX(0px);
-	}
+.useful-page .accordion .card .card-body {
+	border-top: 1px solid lightslategray;
 }

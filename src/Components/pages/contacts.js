@@ -38,7 +38,7 @@ export default function Contacts () {
 						<span className="content-name">Задайте ваш вопрос</span>
 					</label>
         </div>
-				<button type="button" className="btn btn-primary">Отправить</button>
+				<button type="button" className="btn">Отправить</button>
 			</div>
 		</div>
 	);
